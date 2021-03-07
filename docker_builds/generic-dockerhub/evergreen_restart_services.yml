@@ -191,9 +191,6 @@
     environment:
       PATH: "{{ ansible_env.PATH }}:{{openils_path}}/bin"
     shell:  export PATH=$PATH:{{openils_path}}/bin && {{openils_path}}/bin/autogen.sh -u
-  - name: Setup Lets encrypt folder link
-    become: true
-    shell: cd {{openils_path}}/var/web && ln -sf {{lets_encrypt_shared_web_folder}} .well-known
   - name: Setup shared reports folder link
     become: true
     become_user: opensrf
