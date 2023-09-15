@@ -5,10 +5,10 @@
 # NOTE: xenial is not supported due to the nodejs stack issues, but left here for reference in case you want to hack it
 # Evergreen didn't support ubuntu bionic until version 3.3
   ubuntu_version: focal
-  evergreen_version: 3.9.1
+  evergreen_version: 3.11.1
 # This is tempermental. If you turn this setting on, you might end up having to manually edit the resulting installation
 # Particularly eg_vhost.conf
-  add_evergreen_language_support: no
+  add_evergreen_language_support: yes
 # You can manually assign the Evergreen git branch, or let this regular expression figure it out based on evergreen_git_branch
   evergreen_git_branch: main
 
